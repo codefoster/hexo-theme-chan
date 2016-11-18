@@ -11,9 +11,6 @@
         <% if (config.description) { %>
           <div class="description"><%= config.description %></div>
         <% } %>
-        <% if (config.author) { %>
-          <div class="author"><%= config.author %></div>
-        <% } %>
       </div>
       <% if (theme.avatar) { %>
         <div class="avatar">
@@ -31,29 +28,24 @@
       <% theme.nav.forEach(function(list) { %>
         <ul class="nav">
           <% list.forEach(function(item){ %>
-            <% if (item === 'categories') { %>
-              <li class="category-list-container">
-                <a href="javascript:;"><%- __('category') %></a>
-                <%- list_categories({depth: -1}) %>
-              </li>
-            <% } else if (item === 'tags') { %>
-              <li class="tag-list-container">
-                <a href="javascript:;"><%- __('tag') %></a>
-                <%- list_tags({}) %>
-              </li>
-            <% } else if (item === 'archives') { %>
-              <li class="archive-list-container">
-                <a href="javascript:;"><%- __('archive') %></a>
-                <%- list_archives({type: 'yearly'}) %>
-              </li>
-            <% } else { %>
               <li>
                 <%- link_to(item.url, item.name, {external: item.url.indexOf('http') === 0}) %>
               </li>
-            <% } %>
           <% }) %>
         </ul>
       <% }); %>
     <% } %>
+
+    <div>
+      <% if (theme.social && theme.social.length) { %>
+        <% theme.social.forEach(function(list) { %>
+          <% list.forEach(function(item){ %>
+              <a href="<%- item.url %>">
+                <img src="<%- item.image %>"/>
+              </a>
+          <% }) %>
+        <% }); %>
+      <% } %>
+    </div>
   </div>
 </div>

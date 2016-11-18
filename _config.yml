@@ -8,7 +8,7 @@ favicon: /favicon.png
 monochrome: true
 
 # view setting
-avatar: https://cn.gravatar.com/avatar/35fef74d731255cd569c2c2b0b9e87e4?s=200
+avatar: /files/avatar.png
 avatarLink: /about
 maxContentWidth: 1000px # set the main content column's max-width property. keep it blank to unlimited the width
 copyright: # the copyright text in the footer, could be richtext
@@ -22,26 +22,41 @@ copyright: # the copyright text in the footer, could be richtext
 # There are also some special link items representing in string: 'categories', 'tags' and 'archives'
 nav:
   -
-    - categories # display a collapsible category list
-    - tags       # display a collapsible tag list
-    - archives   # display a collapsible archive list
-  -
     -
-      name: Homepage
+      name: Blog
       url: '/'
     -
-      name: By Year
-      url: /archives
+      name: About Me
+      url: '/about'
+    -
+      name: Resources
+      url: '/resources'
+    -
+      name: Events
+      url: '/events'
+
+social:
   -
     -
-      name: Chan
-      url: https://github.com/denjones/hexo-theme-chan
+      name: Twitter
+      url: http://twitter.com/codefoster
+      image: /images/social-icons/twitter.png
     -
-      name: Github
-      url: https://github.com/denjones
+      name: GitHub
+      url: https://github.com/codefoster
+      image: /images/social-icons/github.png
+    -
+      name: LinkedIn
+      url: https://linkedin.com/in/codefoster
+      image: /images/social-icons/linkedin.png
+    -
+      name: Email
+      url: mailto:jeremy.foster@microsoft.com
+      image: /images/social-icons/email.png
     -
       name: RSS
       url: /atom.xml
+      image: /images/social-icons/rss.png
 
 # duoshuo shortname
 # refer to http://duoshuo.com
@@ -54,7 +69,7 @@ nav:
 #jiathis: 1589291
 
 # open graph
-twitter:
+twitter: codefoster
 google_plus:
 fb_admins:
 fb_app_id:
@@ -74,7 +89,7 @@ baidu_statistics:
 # - none
 # This setting could be overwritten in the front matter of a post.
 # More details in https://creativecommons.org
-cc: by-sa
+cc: none
 
 # FancyBox / PhotoSwipe
 # Although it is called fancybox, we use PhotoSwipe instead.
