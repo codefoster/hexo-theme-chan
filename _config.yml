@@ -8,7 +8,7 @@ favicon: /favicon.png
 monochrome: true
 
 # view setting
-avatar: /files/avatar.png
+avatar: /avatar.png
 avatarLink: /about
 maxContentWidth: 1000px # set the main content column's max-width property. keep it blank to unlimited the width
 copyright: # the copyright text in the footer, could be richtext
@@ -26,14 +26,17 @@ nav:
       name: Blog
       url: '/'
     -
+      name: Categories
+      url: '/categories'
+    -
+      name: Tags
+      url: '/tags'
+    -
       name: About Me
       url: '/about'
     -
-      name: Resources
-      url: '/resources'
-    -
-      name: Events
-      url: '/events'
+      name: Presentations
+      url: '/presents'
 
 social:
   -
