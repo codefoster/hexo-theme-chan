@@ -28,9 +28,26 @@
       <% theme.nav.forEach(function(list) { %>
         <ul class="nav">
           <% list.forEach(function(item){ %>
+            <% if (item === 'categories') { %>
+              <li class="category-list-container">
+                <a href="javascript:;"><%- __('categories') %></a>
+                <%- list_categories({depth: -1}) %>
+              </li>
+            <% } else if (item === 'tags') { %>
+              <li class="tag-list-container">
+                <a href="javascript:;"><%- __('tags') %></a>
+                <%- list_tags({show_count:false}) %>
+              </li>
+            <% } else if (item === 'archives') { %>
+              <li class="archive-list-container">
+                <a href="javascript:;"><%- __('archives') %></a>
+                <%- list_archives({type: 'yearly'}) %>
+              </li>
+            <% } else { %>
               <li>
                 <%- link_to(item.url, item.name, {external: item.url.indexOf('http') === 0}) %>
               </li>
+            <% } %>
           <% }) %>
         </ul>
       <% }); %>

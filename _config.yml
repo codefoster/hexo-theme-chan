@@ -26,17 +26,15 @@ nav:
       name: Blog
       url: '/'
     -
-      name: Categories
-      url: '/categories'
-    -
-      name: Tags
-      url: '/tags'
-    -
       name: About Me
       url: '/about'
     -
       name: Presentations
       url: '/presents'
+  -
+    - categories
+    - tags
+    - archives
 
 social:
   -
