@@ -1,6 +1,8 @@
 (function() {
   'use strict';
 
+  focusMain();
+  
   // hide scrollbar
   Ps.initialize($('.sidebar')[0]);
 
@@ -265,7 +267,11 @@
     // execute above function
     initPhotoSwipeFromDOM(gallerySelector);
   }
+  
+  focusMain();
 
-  //focus on the main content so we can keyboard scroll immediately
-  $('.main-content').prop('tabIndex', -1).focus();
+  function focusMain() {
+    //focus on the main content so we can keyboard scroll immediately
+    $('.main-content').prop('tabIndex', -1).focus();
+  }
 })();
