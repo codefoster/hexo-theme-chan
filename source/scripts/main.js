@@ -265,4 +265,7 @@
     // execute above function
     initPhotoSwipeFromDOM(gallerySelector);
   }
+
+  //focus on the main content so we can keyboard scroll immediately
+  $('.main-content').prop('tabIndex', -1).focus();
 })();
