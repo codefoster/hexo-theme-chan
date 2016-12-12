@@ -2,7 +2,6 @@
 
 # site setting
 rss: /atom.xml
-favicon: /favicon.png
 
 # style setting
 monochrome: true
@@ -84,7 +83,7 @@ fb_admins:
 fb_app_id:
 
 # analytics ids
-google_analytics:
+google_analytics: UA-37743342-1
 baidu_statistics:
 
 # default creative commons
