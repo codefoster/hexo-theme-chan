@@ -29,7 +29,7 @@ nav:
       url: '/about'
     -
       name: Presentations
-      url: '/presents'
+      url: '/presentations'
   -
     - categories
     - tags
