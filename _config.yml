@@ -84,6 +84,7 @@ fb_app_id:
 
 # analytics ids
 google_analytics: UA-37743342-1
+omniture: jerfost
 baidu_statistics:
 
 # default creative commons
