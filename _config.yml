@@ -22,7 +22,7 @@ copyright: # the copyright text in the footer, could be richtext
 nav:
   -
     -
-      name: Blog
+      name: Content
       url: '/'
     -
       name: About Me
